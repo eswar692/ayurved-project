@@ -4,8 +4,8 @@ const  Footer = () => {
     <div className='bg-gray-800 w-full h-auto text-white p-3'>
       <div className="flex md:flex-row  flex-col h-full gap-2" >
         <div className=' w-full md:w-1/3 h-full flex flex-col items-center justify gap-3'>
-          <h1 className='text-2xl font-bold'>My App</h1>
-          <p className='text-md '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+          <h1 className='text-2xl font-bold'>About Us</h1>
+          <p className='text-md '>We are the best Ayurvedic Guruji in the world</p>
         </div>
         <div className=' w-full md:w-1/3 h-full flex flex-col items-center justify-center gap-3'>
           <h1 className='text-2xl font-bold'>Contact Us</h1>

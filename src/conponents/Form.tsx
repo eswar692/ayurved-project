@@ -31,8 +31,8 @@ const Form = () => {
                  action="https://formspree.io/f/mvgaznyw"
                  method="POST"
                  className="flex flex-col gap-2 w-[80%] h-auto ">
-                    <input type="text"  name="name" className="border border-gray-300 rounded-md p-2" placeholder="Enter your name" />
-                    <input type="email" name="email" className="border border-gray-300 rounded-md p-2" placeholder="Enter your email" />
+                    <input required type="text"  name="name" className="border border-gray-300 rounded-md p-2" placeholder="Enter your name" />
+                    <input required type="email" name="email" className="border border-gray-300 rounded-md p-2" placeholder="Enter your email" />
                     <textarea id="message" name="message" className="border border-gray-300 rounded-md p-2 h-32" placeholder="Enter your message"></textarea>
                     <button type="submit" className="bg-blue-500 text-white rounded-md p-2 mt-3">Submit</button>
                 </form>

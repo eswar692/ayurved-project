@@ -1,10 +1,12 @@
-import { motion } from "motion/react"
+import Carousel from "@/utils/Carousel"
+import { motion, useInView } from "motion/react"
 
 
 const HomeBody = () => {
   return (
-    <div className="font-poppins flex items-center justify-center bg-gray-200 ">
+    <div className="font-poppins flex items-center justify-center  ">
         <div className=" w-full md:w-[80%]  flex flex-col items-center justify-center h-auto p-3 gap-2">
+          {/* 1 Item */}
             <div className=" w-full h-auto flex flex-col items-center justify-center gap-3 p-3">
                 <h1 className="text-3xl font-bold">Welcome To Best Ayurvedic Guruji</h1>
                 <img 
@@ -56,14 +58,15 @@ const HomeBody = () => {
                    
                     <div className="flex justify-center ">
                       <a href="tel:+917032176288">
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Call Now</button> 
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 rounded px-20 shadow-lg">Call Now</button> 
                       </a> 
                     </div>
                  </div>
             </div>
-
+          
+              {/* 2 Item */}
             <div className=" w-full h-auto flex flex-col items-center justify-center gap-3 p-3">
-                <h1 className="text-3xl font-bold">Welcome to My App</h1>
+                {/* <h1 className="text-3xl font-bold">Welcome to My App</h1> */}
                 <motion.div 
                   // initial={{ translateX: "-100%", opacity: 0.1}}
                   // animate={{ translateX: "0%", opacity: 1}}
@@ -71,31 +74,100 @@ const HomeBody = () => {
                   // className="w-full h-auto flex items-center justify-center"
                 >
                   <img 
-                    src="https://i.ytimg.com/vi/hzxHuuR_DYE/maxresdefault.jpg" 
+                    src="https://www.hopkinsmedicine.org/-/media/images/health/3_-wellness/integrative-medicine/essential-oils-teaser.jpg?h=260&iar=0&mh=260&mw=380&w=380&hash=37BC59D0A7736CCB0BBB26CD6235A7BF" 
                     alt="Maruku Mandu"
-                    className="w-full md:w-1/2 rounded-md"
+                    className="w-[500px] h-[300px] rounded"
                   />
                 </motion.div>
 
-                 <div>
+                 <div className="flex flex-col items-center justify-center gap-3">
+                    <h4 className="text-2xl font-bold text-center">We aim to spread natural healing to every home</h4>
                     <p className="text-lg break-words text-justify ">
-                    "Marugu mandu" in English can be translated as "boiling point medicine" or "simmering medicine". It is a term used in Telugu and Kannada, referring to a medicine or remedy that is traditionally prepared by boiling or simmering ingredients. The term suggests a method of preparation where the ingredients are heated to a point just below boiling, forming tiny bubbles, with a murmuring sound. 
+                    your trusted gateway to ancient healing. Rooted in India’s 5000-year-old wisdom, our mission is to bring natural, holistic wellness into every home. In a world filled with chemicals and fast fixes, Ayurveda offers balance, purity, and lasting relief. Here, you’ll discover time-tested remedies, powerful herbs, and lifestyle guidance tailored to your body and mind. Whether you’re looking to heal, prevent illness, or simply live better – you're in the right place. Let nature be your medicine, and tradition be your guide.
+
+
                     </p>
                  </div>
+                 <div className="flex justify-center ">
+                      <a href="tel:+917032176288">
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 rounded px-20 shadow-lg">Call Now</button> 
+                      </a> 
+                    </div>
             </div>
-
+            
+              {/* 3 Item */}
             <div className=" w-full h-auto flex flex-col items-center justify-center gap-3 p-3">
-                <h1 className="text-3xl font-bold">Welcome To Best Ayurvedic Guruji</h1>
+                <h1 className="text-3xl font-bold">Ayurvedic Products</h1>
                 <img 
-                 src="https://i.ytimg.com/vi/hzxHuuR_DYE/maxresdefault.jpg" 
+                 src="https://www.travancoreayurveda.com/wp-content/uploads/2023/12/ayurveda-treatments.jpg" 
                  alt="Maruku Mandu"
                  className="w-full md:w-1/2" />
                  <div>
                     <p className="text-lg break-words text-justify ">
-                    "Marugu mandu" in English can be translated as "boiling point medicine" or "simmering medicine". It is a term used in Telugu and Kannada, referring to a medicine or remedy that is traditionally prepared by boiling or simmering ingredients. The term suggests a method of preparation where the ingredients are heated to a point just below boiling, forming tiny bubbles, with a murmuring sound. 
+                    we don’t just believe in natural healing — we create it.
+                    All our Ayurvedic products are carefully crafted using traditional formulas, pure herbs, and age-old techniques passed down through generations. From immunity boosters to skin care, digestion support to stress relief, each product is made with love, purity, and purpose.
+                    We proudly offer what we use ourselves — because your health is our priority.
+                    ✨ Start your healing journey today with 100% authentic Ayurvedic products from Our Famous Ayurveda. 
                     </p>
                  </div>
+                 <div className="flex justify-center ">
+                      <a href="tel:+917032176288">
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 rounded px-20 shadow-lg">Call Now</button> 
+                      </a> 
+                    </div>
             </div>
+
+            {/* 4 Item */}
+
+            <div className=" w-full h-auto flex flex-col items-center justify-center gap-3 p-3">
+                <h1 className="text-3xl font-bold">Ayurvedic Products</h1>
+                <img 
+                 src="https://tour2wellness.com/images/treatments/shirodhara-ayurveda-treatment-tour2wellness.webp" 
+                 alt="Maruku Mandu"
+                 className="w-full md:w-1/2 rounded  " />
+                 <div>
+                    <p className="text-lg break-words text-justify ">
+                    we don’t just believe in natural healing — we create it.
+                    All our Ayurvedic products are carefully crafted using traditional formulas, pure herbs, and age-old techniques passed down through generations. From immunity boosters to skin care, digestion support to stress relief, each product is made with love, purity, and purpose.
+                    We proudly offer what we use ourselves — because your health is our priority.
+                    ✨ Start your healing journey today with 100% authentic Ayurvedic products from Our Famous Ayurveda. 
+                    </p>
+                 </div>
+                 <div className="flex justify-center ">
+                      <a href="tel:+917032176288">
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 rounded px-20 shadow-lg">Call Now</button> 
+                      </a> 
+                    </div>
+            </div>
+
+            {/* 5 Item */}
+
+            <div className=" w-full h-auto flex flex-col items-center justify-center gap-3 p-3">
+                <h1 className="text-3xl font-bold">Ayurvedic Products</h1>
+                <img 
+                 src="https://hiims.in/blog/wp-content/uploads/2024/08/Healthy-Living-Ayurvedic-Lifestyle-Tips-for-Everyday-Wellness.png" 
+                 alt="Maruku Mandu"
+                 className="w-full md:w-1/2 rounded  " />
+                 <div>
+                    <p className="text-lg break-words text-justify ">
+                    we don’t just believe in natural healing — we create it.
+                    All our Ayurvedic products are carefully crafted using traditional formulas, pure herbs, and age-old techniques passed down through generations. From immunity boosters to skin care, digestion support to stress relief, each product is made with love, purity, and purpose.
+                    We proudly offer what we use ourselves — because your health is our priority.
+                    ✨ Start your healing journey today with 100% authentic Ayurvedic products from Our Famous Ayurveda. 
+                    </p>
+                 </div>
+                 <div className="flex justify-center ">
+                      <a href="tel:+917032176288">
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 rounded px-20 shadow-lg">Call Now</button> 
+                      </a> 
+                    </div>
+            </div>
+
+              
+              {/* 6 Item carousel*/}
+              <Carousel/>
+            
+
 
         </div>
 
