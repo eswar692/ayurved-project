@@ -35,20 +35,20 @@ const Form = () => {
                 required
                 type="text"
                 name="name"
-                className="border border-gray-300 rounded-md p-2"
+                className="border border-gray-400 rounded-md p-2 focus:border-2 focus:border-black placeholder:text-black/40"
                 placeholder="Enter your name"
               />
               <input
                 required
                 type="email"
                 name="email"
-                className="border border-gray-300 rounded-md p-2"
+                className="border border-gray-400 rounded-md p-2 focus:border-2 focus:border-black placeholder:text-black/40"
                 placeholder="Enter your email"
               />
               <textarea
                 id="message"
                 name="message"
-                className="border border-gray-300 rounded-md p-2 h-32"
+                className="border border-gray-400 rounded-md p-2 h-32 focus:border-2 focus:border-black placeholder:text-black/40"
                 placeholder="Enter your message"
               ></textarea>
               <button

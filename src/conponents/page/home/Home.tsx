@@ -1,17 +1,17 @@
-import Footer from "@/conponents/Footer"
-import Header from "@/conponents/Header"
-import HomeBody from "./Body"
-import Form from "@/conponents/Form"
+import Footer from "@/conponents/Footer";
+import Header from "@/conponents/Header";
+import HomeBody from "./Body";
+import Form from "@/conponents/Form";
 
 const Home = () => {
   return (
-    <div>
-        <Header />
-        <HomeBody/>
-        <Footer/>
-        <Form/>
+    <div className="mt-[60px]">
+      <Header />
+      <HomeBody />
+      <Footer />
+      <Form />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
