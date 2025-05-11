@@ -7,7 +7,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   console.log(isOpen);
   return (
-    <div className=" h-[60px] w-full flex items-center">
+    <div className=" h-[60px] w-full flex items-center shadow-[0_0_10px] shadow-gray-500 fixed top-0 z-50 bg-white">
       <div className="md:flex flex-row items-center justify-between w-full  relative ">
         <div className=" font-bold w-full   md:w-auto     ">
           <h3 className="text-[19px]  text-center pl-10 pt-2 text-orange-600">
