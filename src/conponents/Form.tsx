@@ -29,7 +29,7 @@ const Form = () => {
             <form
               action="https://formspree.io/f/mvgaznyw"
               method="POST"
-              className="flex flex-col gap-2 w-[80%] h-auto "
+              className="flex flex-col gap-2 w-[100%] h-auto "
             >
               <input
                 required
