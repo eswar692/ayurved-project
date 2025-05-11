@@ -14,7 +14,7 @@ const Form = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsOpen(!isOpen);
-    }, 1000 * 5000);
+    }, 1000 * 5);
   }, []);
 
   return (
