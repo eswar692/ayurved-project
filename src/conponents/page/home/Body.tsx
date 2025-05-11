@@ -1,5 +1,5 @@
 import Carousel from "@/utils/Carousel";
-import { motion, useInView } from "motion/react";
+import { motion } from "motion/react";
 
 const HomeBody = () => {
   return (
